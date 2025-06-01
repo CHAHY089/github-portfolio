@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Birthday Invitation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background: linear-gradient(135deg, #f9d423 0%, #ff4e50 100%);
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .invitation-card {
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+            padding: 2rem 3rem;
+            max-width: 400px;
+            text-align: center;
+        }
+        .invitation-card h1 {
+            color: #ff4e50;
+            margin-bottom: 0.5em;
+            font-size: 2.2em;
+        }
+        .invitation-card p {
+            color: #333;
+            font-size: 1.1em;
+            margin: 0.5em 0;
+        }
+        .invitation-card .date {
+            font-weight: bold;
+            color: #008000;
+            font-size: 1.2em;
+            margin: 1em 0;
+        }
+        .invitation-card .rsvp {
+            margin-top: 1.5em;
+            font-size: 1em;
+            color: #555;
+        }
+        .balloons {
+            font-size: 2em;
+            margin-bottom: 0.5em;
+        }
+        img {
+            width: 70%;
+            height: auto;
+            border-radius: 12px;
+            margin-bottom: 1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="invitation-card">
+        <div class="balloons">🎈🎉🥳🎂🎁</div>
+        <h1>You're Invited!</h1>
+        <img src="https://files.idyllic.app/files/static/2520456?width=1080&optimizer=image" alt="party-pic">
+        <p>Join us to celebrate</p>
+        <p style="font-size:1.3em;font-weight:bold;">Someone's Birthday!</p>
+        <div class="date">Saturday, July 20th<br>2:00 PM - 5:00 PM</div>
+        <p>123 Party Lane<br>ABC Town</p>
+        <div class="rsvp">
+            RSVP below or whtsap: <a href="tel:1234567890">123-456-7890</a>
+        </div>
+        <form style="margin-top:1.5em; text-align:left;">
+            <label for="guestName">Your Name:</label><br>
+            <input type="text" id="guestName" name="guestName" required style="width:100%;margin-bottom:0.8em;"><br>
+            <label for="contactNumber">Contact Number:</label><br>
+            <input type="tel" id="contactNumber" name="contactNumber" required style="width:100%;margin-bottom:1em;"><br>
+            <button type="submit" style="width:100%;background:#ff4e50;color:#fff;border:none;padding:0.7em 0;border-radius:8px;font-size:1em;cursor:pointer;">Send RSVP</button>
+        </form>
+    </div>
+</body>
+</html>
