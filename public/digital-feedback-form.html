@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Chan Airbnb Feedback Form</title>
+    <style>
+      
+      body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: #90d5ff;
+          color: #333;
+      }
+      
+      form {
+          max-width: 500px;
+          margin: 2rem auto;
+          padding: 1.5rem;
+          border: 1px solid #ddd;
+          border-radius: 8px;
+          background-color: #fff;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      
+      p {
+          text-align: center;
+          color: #000000;
+      }
+      
+      h1 {
+          text-align: center;
+          color: #555;
+          font-size: 1.8rem;
+          margin-bottom: 1rem;
+          margin-top: 1rem;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="number"],
+      textarea {
+          width: 100%;
+          padding: 0.8rem;
+          margin-bottom: 1rem;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          font-size: 1rem;
+      }
+
+      textarea {
+          height: 100px;
+          resize: none;
+      }
+      
+      input[type="radio"],
+      input[type="checkbox"] {
+          margin-right: 8px;
+      }
+
+      label {
+          margin-bottom: 8px;
+          display: block;
+      }
+
+      input[type="submit"] {
+          width: 100%;
+          padding: 0.8rem;
+          background-color: #007aff;
+          color: #fff;
+          border: none;
+          border-radius: 4px;
+          font-size: 1rem;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+      }
+
+      input[type="submit"]:hover {
+          background-color: #005bb5;
+      }
+
+      textarea::placeholder {
+          font-style: italic;
+          color: #999;
+      }
+
+      @media (max-width: 600px) {
+          form {
+              margin: 1rem;
+              padding: 1rem;
+          }
+      }
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Chan Airbnb Feedback Form</h1>
+      <p>
+        Thank you for staying with us. Please provide feedback on your recent
+        stay and we hope you had a pleasant experience!
+      </p>
+    </header>
+    <main>
+      <form method="POST" action="https://github.com/CHAHY089">
+        <fieldset>
+          <legend>Personal Information</legend>
+          <label for="full-name">Name (required):</label>
+          <input 
+            type="text" 
+            id="full-name" 
+            name="full-name" 
+            placeholder="Ex. John Doe" 
+            required size="20"
+          />
+
+          <label for="email">Email address (required):</label>
+          <input
+            placeholder="example@email.com"
+            required
+            id="email"
+            type="email"
+            name="email"
+            size="20"
+          />
+          <label for="age">Age (optional):</label>
+          <input 
+            type="number"
+            placeholder="18" 
+            name="age" 
+            id="age" 
+            min="3" 
+            max="100" 
+          />
+        </fieldset>
+
+        <fieldset>
+          <legend>Was this your first time at our airbnb? (Choose one)</legend>
+          <label for="yes-option">Yes</label>
+          <input id="yes-option" type="radio" name="hotel-stay" />
+          <label for="no-option">No</label>
+          <input id="no-option" type="radio" name="hotel-stay" />
+          <label for="no-option">I don't know</label>
+          <input id="idk-option" type="radio" name="hotel-stay" />
+        </fieldset>
+
+        <fieldset>
+          <legend>
+            Why did you choose to stay at our hotel? (Choose multiple)
+          </legend>
+
+          <label for="news">Newspaper</label>
+          <input 
+          type="checkbox" 
+          id="news" 
+          name="news" 
+          value="news" />
+
+          <label for="ads">Social Media Ads</label>
+          <input 
+          type="checkbox" 
+          id="ads" 
+          name="ads" 
+          value="ads" />
+
+          <label for="recommendation">Personal Recommendation</label>
+          <input
+            type="checkbox"
+            id="recommendation"
+            name="recommendation"
+            value="recommendation"
+          />
+
+          <label for="location">Location</label>
+          <input 
+          type="checkbox" 
+          id="location" 
+          name="location" 
+          value="location" />
+
+          <label for="reputation">Reputation</label>
+          <input
+            checked
+            type="checkbox"
+            id="reputation"
+            name="reputation"
+            value="reputation"
+          />
+
+          <label for="price">Price</label>
+          <input 
+          type="checkbox" 
+          id="price" 
+          name="price" 
+          value="price" />
+
+          <label for="others">Other reasons</label>
+          <input type="checkbox" id="others" name="others" value="others" />          
+        </fieldset>
+
+        <fieldset>
+          <legend>Ratings</legend>
+
+          <label for="service">How was the service?</label>
+
+          <select name="service" id="service">
+            <option value="poor">Poor</option>
+            <option value="satisfactory">Satisfactory</option>
+            <option value="good">Good</option>
+            <option value="very-good">Very Good</option>
+            <option selected value="excellent">Excellent</option>
+          </select>
+
+          <label for="food">How was the food?</label>
+
+          <select name="food" id="food">
+            <option value="poor">Poor</option>
+            <option value="satisfactory">Satisfactory</option>
+            <option value="good">Good</option>
+            <option value="very-good">Very Good</option>
+            <option selected value="excellent">Excellent</option>
+          </select>
+
+          <label for="clean">How was the cleanliness?</label>
+
+          <select name="clean" id="clean">
+            <option value="poor">Poor</option>
+            <option value="satisfactory">Satisfactory</option>
+            <option value="good">Good</option>
+            <option value="very-good">Very Good</option>
+            <option selected value="excellent">Excellent</option>
+          </select>          
+        </fieldset>
+
+        <label for="comments">Do you have any other comments to help us improve?</label>
+        <textarea cols="30" rows="10" name="comments" id="comments"></textarea>
+        <button type="submit">Submit</button>
+  </body>
+  <footer>
+    <p>
+      Thank you for your feedback! We appreciate your time and effort in helping
+      us improve our services. ~ Chan Airbnb Team
+    </p>
+  </footer>
+</html>
